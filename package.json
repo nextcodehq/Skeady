@@ -1,0 +1,42 @@
+{
+  "name": "skeady-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "check-types": "turbo run check-types",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check",
+    "format:rust": "cargo fmt --manifest-path apps/skeady/src-tauri/Cargo.toml --all",
+    "format:rust:check": "cargo fmt --manifest-path apps/skeady/src-tauri/Cargo.toml --all -- --check",
+    "tauri:dev": "bun --filter skeady tauri dev",
+    "tauri:build": "bun --filter skeady tauri build",
+    "check": "bun run format:check && bun run format:rust:check && bun run lint && bun run check-types && bun run build",
+    "prepare": "husky",
+    "cm": "cz"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^21.2.3",
+    "@commitlint/config-conventional": "^21.2.3",
+    "commitizen": "^4.3.2",
+    "cz-git": "^1.14.0",
+    "husky": "^9.1.7",
+    "oxfmt": "^0.73.0",
+    "oxlint": "^1.88.0",
+    "tailwindcss": "^4.3.3",
+    "turbo": "^2.11.9"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
+  },
+  "packageManager": "bun@1.4.2"
+}
