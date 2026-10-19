@@ -1,4 +1,5 @@
 # Skeady
+
 Schedule and task management.
 
 ## Apps
@@ -29,4 +30,5 @@ Schedule and task management.
 - `bun run check` run the configured checks and build
 
 ## License
+
 GNU Affero General Public License v3.0 See [LICENSE](./LICENSE).
