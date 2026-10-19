@@ -26,6 +26,12 @@
     "check-types": {
       "dependsOn": ["^check-types"],
       "outputs": []
+    },
+    "i18n:compile": {
+      "outputs": ["src/paraglide/**"]
+    },
+    "generate-routes": {
+      "outputs": ["src/routeTree.gen.ts"]
     }
   }
 }

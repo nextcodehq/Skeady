@@ -19,9 +19,9 @@
     "format:rust:check": "cargo fmt --manifest-path apps/skeady/src-tauri/Cargo.toml --all -- --check",
     "tauri:dev": "bun --filter skeady tauri dev",
     "tauri:build": "bun --filter skeady tauri build",
-    "check": "bun run format:check && bun run format:rust:check && bun run lint && bun run check-types && bun run build",
     "prepare": "husky",
-    "cm": "cz"
+    "cm": "cz",
+    "check": "bun run format:check && bun run format:rust:check && turbo run lint check-types build"
   },
   "devDependencies": {
     "@commitlint/cli": "^21.2.3",

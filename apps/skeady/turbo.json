@@ -1,0 +1,14 @@
+{
+  "extends": ["//"],
+  "tasks": {
+    "lint": {
+      "dependsOn": ["$TURBO_EXTENDS$", "i18n:compile"]
+    },
+    "check-types": {
+      "dependsOn": ["$TURBO_EXTENDS$", "i18n:compile"]
+    },
+    "build": {
+      "dependsOn": ["$TURBO_EXTENDS$", "i18n:compile"]
+    }
+  }
+}
