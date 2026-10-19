@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a vulnerability / 脆弱性の報告
+    url: https://github.com/nextcodehq/Skeady/security/advisories/new
+    about: Use private reporting. / 非公開の報告窓口を使用してください。

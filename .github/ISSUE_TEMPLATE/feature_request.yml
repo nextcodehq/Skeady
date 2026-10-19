@@ -1,0 +1,30 @@
+name: Feature request / 機能提案
+description: Suggest a feature / 機能を提案
+title: "[Feature]: "
+labels:
+  - "enhancement / 機能追加・改善"
+  - "triage / 初期確認"
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / 解決したい問題
+      description: What problem would this solve? / どのような問題を解決しますか？
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution / 提案
+      description: Describe the expected behavior. / 期待する動作を記載してください。
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives / 代替案
+      description: Other approaches, if any. / ほかの案があれば記載してください。
+    validations:
+      required: false

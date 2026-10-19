@@ -1,0 +1,58 @@
+name: Bug report / 不具合報告
+description: Report a bug / 不具合を報告
+title: "[Bug]: "
+labels:
+  - "bug / バグ"
+  - "triage / 初期確認"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include security vulnerabilities in public issues.
+        脆弱性を公開 Issue で報告しないでください。
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component / 対象
+      options:
+        - Desktop app / デスクトップアプリ
+        - Dashboard / ダッシュボード
+        - API
+        - Documentation / ドキュメント
+        - Shared packages / 共通パッケージ
+        - Other / その他
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior / 発生した動作
+      description: What happened? / 何が起きましたか？
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior / 期待する動作
+      description: What did you expect? / 期待した動作を記載してください。
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce / 再現手順
+      description: Provide reproducible steps. / 再現手順を記載してください。
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment / 環境
+      description: OS, app version, or commit if relevant. / OS、アプリのバージョン、関連するコミットなど。
+    validations:
+      required: false
