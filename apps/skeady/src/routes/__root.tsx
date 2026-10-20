@@ -1,12 +1,7 @@
-import {
-  createRootRoute,
-  Link,
-  Outlet,
-} from "@tanstack/react-router";
+import { createRootRoute, Link, Outlet } from "@tanstack/react-router";
 
 function RootLayout() {
-  const linkClass =
-    "block rounded-md px-3 py-2 text-sm hover:bg-sidebar-accent";
+  const linkClass = "block rounded-md px-3 py-2 text-sm hover:bg-sidebar-accent";
 
   return (
     <div className="min-h-screen bg-background text-foreground">
