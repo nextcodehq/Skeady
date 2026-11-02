@@ -24,15 +24,15 @@
     "check": "bun run format:check && bun run format:rust:check && turbo run lint check-types build"
   },
   "devDependencies": {
-    "@commitlint/cli": "^21.2.3",
-    "@commitlint/config-conventional": "^21.2.3",
+    "@commitlint/cli": "^21.2.4",
+    "@commitlint/config-conventional": "^21.2.4",
     "commitizen": "^4.3.2",
     "cz-git": "^1.14.0",
     "husky": "^9.1.7",
-    "oxfmt": "^0.73.0",
-    "oxlint": "^1.88.0",
+    "oxfmt": "^0.75.0",
+    "oxlint": "^1.90.0",
     "tailwindcss": "^4.3.3",
-    "turbo": "^2.11.9"
+    "turbo": "^2.11.10"
   },
   "config": {
     "commitizen": {
