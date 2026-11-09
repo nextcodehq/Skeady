@@ -21,7 +21,7 @@
     "@inlang/paraglide-js": "^2.29.0",
     "@skeady/ui": "workspace:*",
     "@t3-oss/env-core": "^0.13.11",
-    "@tanstack/react-router": "^1.170.45",
+    "@tanstack/react-router": "^1.170.46",
     "@tauri-apps/api": "^2",
     "@tauri-apps/plugin-opener": "^2",
     "react": "^19.1.0",
@@ -30,15 +30,15 @@
   },
   "devDependencies": {
     "@skeady/tsconfig": "workspace:*",
-    "@tailwindcss/vite": "^4.3.3",
+    "@tailwindcss/vite": "^4.3.4",
     "@tanstack/router-plugin": "^1.168.47",
     "@tauri-apps/cli": "^2",
     "@types/node": "^26.6.5",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
-    "@vitejs/plugin-react": "^6.0.2",
-    "tailwindcss": "^4.3.3",
+    "@vitejs/plugin-react": "^6.2.1",
+    "tailwindcss": "^4.3.4",
     "typescript": "~6.0.3",
-    "vite": "^8.0.16"
+    "vite": "^8.3.6"
   }
 }
